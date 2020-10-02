@@ -1,0 +1,55 @@
+<!--adding inline  style to  the  form-->
+<body style="color:white;
+            background-color:maroon;">
+    <form method="post"
+        enctype="application/x-www-form-urlencoded"
+        action="https://pizza.example.com/order.cgi">
+        <p><label>customer name:<input 
+             name="custname"></label></p>
+
+        <p><label>Telephone:<input type=tel
+             name="custtel"></label></p>
+
+        <p><label>Email address:<input type=email 
+            name="custemail"></label></p>
+
+        <fieldset>
+        <legend>Pizza size</legend>
+        <p><label><input type=radio name=size
+             value="small">small</label></p> 
+
+        <p><label><input type="radio" name=size
+             value="medium">Medium</label></p>
+
+        <p><label><input type="radio" name=size
+             value="large">Large</label></p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Pizza  toppings</legend>
+        <p><label><input type=checkbox name="toppings"
+             value="bacon">Bacon</label></p>
+
+        <p><label><input type=checkbox name="toppings"
+             value="Extra cheese"> Extra cheese
+        </label></p>
+
+        <p><label><input type=checkbox name="toppings"
+             value="Onion">Onion</label></p>
+
+        
+        
+        
+             <p><label><input type=checkbox name="toppings"
+             value="Mushroom">Mushroom</label></p>
+
+        </fieldset>
+         <p><label>Preferred delivery time:<input type=time
+             min="11:00" max="21:00" step="900"
+         name="delivery"></label></p>
+        <p><label>  Delivery instruction:<textarea 
+            name="comments"></textarea></label></p>
+        <p><button>Submit order</button></p>
+    </form>
+</body>
